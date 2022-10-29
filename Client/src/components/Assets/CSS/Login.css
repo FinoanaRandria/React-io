@@ -95,6 +95,16 @@ input {
    }
    .bir{
     bottom: 400px;
+
      position: absolute;
      overflow: hidden;
    }
+
+   .col{
+    color: #777;
+}
+.boat{
+  width: 300px;
+   position: relative;
+  left: 600px;
+}

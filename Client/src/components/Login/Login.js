@@ -12,10 +12,21 @@ export default function Login() {
       })
    }, [])
 
+   const boat =useRef(null)
+   useEffect(()=>{
+      Lottie.loadAnimation({
+        container:boat.current,
+            renderer:'svg',
+            loop:true,
+        animationData:require('../Assets/svg/121419-moving-boat.json')
+      })
+   }, [])
+
   return (
-    <div className="card">
+    <div>
+      <div className="card">
     <div className="bir" ref={container}></div>
-       <h1>Bienvenu Sur Sea </h1>
+       <h1 className="col">Bienvenu Sur Sea </h1>
       <div>
         <input type="email" placeholder="Email" />
       </div>
@@ -29,8 +40,11 @@ export default function Login() {
       </div>
 
        <p>Design By Finoana Randria</p>
-         
+       
     </div>
+        <div className="boat" ref={boat}></div>
+    </div>
+    
 
   );
 }
