@@ -14,16 +14,19 @@ export default function Login() {
 
    const boat =useRef(null)
    useEffect(()=>{
+    
+   
       Lottie.loadAnimation({
         container:boat.current,
             renderer:'svg',
             loop:true,
         animationData:require('../Assets/svg/121419-moving-boat.json')
+        
       })
    }, [])
-
+   
   return (
-    <div>
+    <div className="back">
       <div className="card">
     <div className="bir" ref={container}></div>
        <h1 className="col">Bienvenu Sur Sea </h1>
