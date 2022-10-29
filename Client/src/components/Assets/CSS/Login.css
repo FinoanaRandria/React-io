@@ -93,3 +93,8 @@ input {
    p{
     font-size: 10px;
    }
+   .bir{
+    bottom: 400px;
+     position: absolute;
+     overflow: hidden;
+   }
