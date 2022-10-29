@@ -25,8 +25,24 @@ export default function Login() {
       })
    }, [])
    
+
+   const sun =useRef(null)
+   useEffect(()=>{
+    
+   
+      Lottie.loadAnimation({
+        container:sun.current,
+            renderer:'svg',
+            loop:true,
+        animationData:require('../Assets/svg/64906-sunny.json')
+        
+      })
+   }, [])
   return (
     <div className="back">
+    <div>
+    <div className="sun" ref={sun}></div>
+    </div>
       <div className="card">
     <div className="bir" ref={container}></div>
        <h1 className="col">Bienvenu Sur Sea </h1>
