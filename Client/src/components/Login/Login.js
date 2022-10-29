@@ -15,6 +15,8 @@ export default function Login() {
       <div>
         <button>Login</button>
       </div>
+
+       <p>Design By Finoana Randria</p>
     </div>
   );
 }
