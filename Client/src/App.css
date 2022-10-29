@@ -1,4 +1,7 @@
 
 body{
-    background-image:"./components/Assets/img/wsx.jpg";
+   
+    background-image:url('./components/Assets/img/4094501.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
 }
