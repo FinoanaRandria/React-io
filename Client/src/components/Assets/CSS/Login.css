@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height:100vh;
+    max-height: 100vh;
   
         
   }
@@ -25,7 +26,7 @@ input{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 20px;
+    bottom: 150px;
     left: 400px;
     width: 450px;
     height: 525px;
@@ -112,9 +113,16 @@ input {
    }
    .bir{
     bottom: 400px;
- 
+     width: 900px;
      position: absolute;
      overflow: hidden;
+   }
+
+   .dolph{
+    width: 150px;
+    position: relative;
+    top: 540px;
+    left: 190px;
    }
 
    .col{
@@ -124,5 +132,5 @@ input {
   width: 300px;
    position: relative;
   left: 1400px;
-  bottom: 200px;
+  bottom: 300px;
 }

@@ -38,10 +38,27 @@ export default function Login() {
         
       })
    }, [])
+
+   const dolph =useRef(null)
+   useEffect(()=>{
+    
+   
+      Lottie.loadAnimation({
+        container:dolph.current,
+            renderer:'svg',
+            loop:true,
+        animationData:require('../Assets/svg/75513-diving-dolphin.json')
+        
+      })
+   }, [])
   return (
     <div className="back">
     <div>
     <div className="sun" ref={sun}></div>
+    </div>
+
+    <div>
+    <div className="dolph" ref={dolph}></div>
     </div>
       <div className="card">
     <div className="bir" ref={container}></div>
