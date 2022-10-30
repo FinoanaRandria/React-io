@@ -54,7 +54,7 @@ export default function Login() {
       })
    }, [])
   return (
-    <motion.div >
+   
       <div className="back">
     <div>
     <div className="sun" ref={sun}></div>
@@ -63,6 +63,13 @@ export default function Login() {
     <div>
     <div className="dolph" ref={dolph}></div>
     </div>
+    {/* -----------------card------------------ */}
+     <motion.div
+              animate={{
+    x: '36px'    
+  }}
+        
+       >
       <div className="card">
     <div className="bir" ref={container}></div>
        <h1 className="col">Bienvenu Sur Sea </h1>
@@ -81,9 +88,18 @@ export default function Login() {
        <p>Design By Finoana Randria</p>
        
     </div>
-        <div className="boat" ref={boat}></div>
+     </motion.div>
+          <motion.div
+                        animate={{
+    x: '36px'    
+  }}
+       
+          >
+
+         <div className="boat" ref={boat}></div>
+          </motion.div>
     </div>
-    </motion.div>
+   
     
     
 

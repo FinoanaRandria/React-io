@@ -6,6 +6,7 @@
   }
    body{
     min-height: 100vh;
+    overflow: hidden;
    }
   .back{
     background-image: url('../img/4094501.jpg');
