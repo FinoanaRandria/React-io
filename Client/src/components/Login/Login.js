@@ -1,6 +1,8 @@
 import React,{useEffect,useRef} from "react";
 import "../Assets/CSS/Login.css";
 import Lottie from 'lottie-web'
+/* fixed */
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 export default function Login() {
    const container =useRef(null)
    useEffect(()=>{
@@ -52,7 +54,8 @@ export default function Login() {
       })
    }, [])
   return (
-    <div className="back">
+    <motion.div >
+      <div className="back">
     <div>
     <div className="sun" ref={sun}></div>
     </div>
@@ -80,6 +83,8 @@ export default function Login() {
     </div>
         <div className="boat" ref={boat}></div>
     </div>
+    </motion.div>
+    
     
 
   );
