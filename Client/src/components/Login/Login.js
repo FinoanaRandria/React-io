@@ -56,7 +56,7 @@ export default function Login() {
     /* -------------Validation login input test kely-----------*/
            const validationInput =document.querySelector("input")
            validationInput.addEventListener('input',(e)=>{
-               if(e.target.value >=4){
+               if(e.target.value.length >=4){
                 validationInput.style.borderColor = "green"
                }else{
                 validationInput.style.borderColor = "red"
